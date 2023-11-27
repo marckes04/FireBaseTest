@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FireBaseController : MonoBehaviour
 {
-    public GameObject loginPanel, signupPanel, profilePanel,forgetPasswordPanel;
+    public GameObject loginPanel, signupPanel, profilePanel,forgetPasswordPanel,notificationPanel;
 
     public InputField loginEmail, loginPasword,signUpEmail,signUpPasword,signUpConfirmPaswd, signUpUserName,forgetPassEmail;
+
+    public Text notificationTitleText, notificationMessageText, profileUserNameText, profileUserEmailText;
+
+
+    public Toggle rememberMe;
 
     public void OpenLogInPanel()
     {
@@ -44,6 +50,7 @@ public class FireBaseController : MonoBehaviour
     {
         if(string.IsNullOrEmpty(loginEmail.text) && string.IsNullOrEmpty(loginPasword.text))
         {
+            showNotificationMessage("Error", "Fields empty please fullfil blank spaces");
             return;
         }
     }
@@ -53,6 +60,7 @@ public class FireBaseController : MonoBehaviour
         if (string.IsNullOrEmpty(signUpEmail.text) && string.IsNullOrEmpty(signUpPasword.text) && string.IsNullOrEmpty(signUpUserName.text)
             && string.IsNullOrEmpty(signUpConfirmPaswd.text))
         {
+            showNotificationMessage("Error", "Fields empty please fullfil");
             return;
         }
     }
@@ -61,8 +69,32 @@ public class FireBaseController : MonoBehaviour
     {
       if(string.IsNullOrEmpty(forgetPassEmail.text))
         {
+            showNotificationMessage("Error", "Fields empty please fullfil");
             return;
         }
+    }
+
+    private void showNotificationMessage(string title, string message)
+    {
+        notificationTitleText.text = " " + title;
+        notificationMessageText.text = " " + message;
+
+        notificationPanel.SetActive(true);
+    }
+
+    public void CloseNotificationPanel()
+    {
+        notificationTitleText.text = " ";
+        notificationMessageText.text = " ";
+
+        notificationPanel.SetActive(false);
+    }
+
+    public void LogOut()
+    {
+        profileUserEmailText.text = " ";
+        profileUserNameText.text = " ";
+        OpenLogInPanel();
     }
 
 }
