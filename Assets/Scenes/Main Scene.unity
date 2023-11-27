@@ -2503,13 +2503,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 585240728}
   m_TextComponent: {fileID: 1546650866}
   m_Placeholder: {fileID: 1449504898}
-  m_ContentType: 6
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
-  m_KeyboardType: 7
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 5
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
@@ -4118,6 +4118,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368685067}
   m_CullTransparentMesh: 1
+--- !u!1 &1391546961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391546962}
+  m_Layer: 0
+  m_Name: CheckUrl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391546962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391546961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45433435, y: 1.0261314, z: 167.84282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1402096930
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,13 +5005,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1519571630}
   m_TextComponent: {fileID: 2860160}
   m_Placeholder: {fileID: 1709877928}
-  m_ContentType: 6
+  m_ContentType: 5
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 7
+  m_KeyboardType: 6
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 5
+  m_CharacterValidation: 4
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
@@ -5569,7 +5600,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ENTER EMAIL.....
+  m_Text: ENTER NAME.....
 --- !u!222 &1709877929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6138,13 +6169,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1994239434}
   m_TextComponent: {fileID: 1066614203}
   m_Placeholder: {fileID: 1149860733}
-  m_ContentType: 6
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
-  m_KeyboardType: 7
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 5
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
@@ -6581,3 +6612,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 291938046}
   - {fileID: 465743585}
+  - {fileID: 1391546962}

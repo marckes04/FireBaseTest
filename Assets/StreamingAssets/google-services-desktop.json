@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866760448435",
+    "project_id": "datakids-6d941",
+    "storage_bucket": "datakids-6d941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866760448435:android:559beb75c92c3eaa1813c6",
+        "android_client_info": {
+          "package_name": "com.company.kids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbIAsPmd8I1BafV5UP91nDFevktZgHnr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
